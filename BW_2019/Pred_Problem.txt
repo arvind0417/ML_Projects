@@ -1,0 +1,28 @@
+1.Tools and packages: scikit-learn, anaconda
+
+2.Language: Python
+
+3.After importing all the required packages, data is loaded in to pandas dataframes(train, test).
+
+4.Created a new feature "date_sent_to_recieved" from other two features("Date-sent-to-company", "Date-received").
+
+5.All the features with date type is converted to int.
+
+6.All the null values for the features is handled.
+
+7.All the features with categorial data values is encoded through LabelEncoder.
+
+8.All the features with large text value is handled with TfidfVectorizer to convert the text data to numeric form and then
+to pandas dataframe and then selected only the top features.
+
+9.Merged the dataframe with the newly created dataframe from text feature.
+
+10.Split the total train data to train and test data with 70:30 ratio with train_test_split.
+
+11.Train the model with train data generated from total train data.
+
+12.Tested different Models performance on test data generated from total train data to find the best base model.
+
+13.Did cross-validation through RandomizedSearchCV to find the best fit model with hyperparmeters.
+
+14.Using best estimator predicted complaint status for the test data.

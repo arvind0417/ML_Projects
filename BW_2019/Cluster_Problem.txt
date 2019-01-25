@@ -1,0 +1,17 @@
+1.Tools and packages: scikit-learn, anaconda
+
+2.Language: Python
+
+3.After importing all the required packages, data is loaded in to pandas dataframes(train, test).
+
+4.Added two features("headline", "text") to create a single feature("text_feature").
+
+5.The feature with text value is handled with TfidfVectorizer to convert the text data to numeric form and then
+to pandas dataframe and then selected only the top features.
+
+7.Merged the dataframe with the newly created dataframe from text feature.
+
+8.Tested different clustering algorithm to find the best model for the given data also found optimal value of number of
+cluster with silhouette_score.
+
+9.Using best clustering algorithm predicted the cluster label for each news id.
